@@ -1,5 +1,5 @@
 locals {
- 
+
   service_slug           = "sbt"
   landing_zone_slug      = var.landing_zone_slug
   application_id         = var.stack
