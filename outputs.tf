@@ -19,16 +19,16 @@ output "service_bus_topic_name" {
 }
 
 output "clientid_sb_data_sender" {
-  value       = azurerm_user_assigned_identity.sb_data_receiver.client_id
-  description = "Client Id to the user-managed identity with Service Bus Data receiver Role"
+  value       = azurerm_user_assigned_identity.sb_data_sender.client_id
+  description = "Client Id to the user-managed identity with Service Bus Data sender Role"
 }
 
-output "principalid_sb_data_receiver" {
-  value       = azurerm_user_assigned_identity.sb_data_receiver.principal_id
-  description = "Principal Id to the user-managed identity with Service Bus Data receiver Role"
+output "principalid_sb_data_sender" {
+  value       = azurerm_user_assigned_identity.sb_data_sender.principal_id
+  description = "Principal Id to the user-managed identity with Service Bus Data sender Role"
 }
 
-output "tenantid_sb_data_receiver" {
-  value       = azurerm_user_assigned_identity.sb_data_receiver.tenant_id
-  description = "Tenant Id to the user-managed identity with Service Bus Data receiver Role"
+output "tenantid_sb_data_sender" {
+  value       = azurerm_user_assigned_identity.sb_data_sender.tenant_id
+  description = "Tenant Id to the user-managed identity with Service Bus Data sender Role"
 }
